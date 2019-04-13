@@ -1,181 +1,215 @@
 <!DOCTYPE html>
 <html>
-<body>
-  <style>
-    caption{
-      font-family:verdana;
-      font-size: 175%;
-    }
-    table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
-    th, td {
-      padding: 5px;
-    }
-    th {
-      text-align: left;
-    }
-    table tr:nth-child(even) {
-      background-color: #eee;
-    }
-    #notVerified td {
-      background-color: red;
-    }
+  <head>
+    <style>
+      body {
+        font-family: 'Arial';
+      }
+      h1 {
+        margin: 50px;
+      }
+      table {
+        font-family: 'Arial';
+        margin: 50px auto;
+        min-width: 65%;
+        border-collapse: collapse;
+        border: 1px solid #eee;
+        border-bottom: 2px solid #444;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+          0px 10px 20px rgba(0,0,0,0.05),
+          0px 20px 20px rgba(0,0,0,0.05),
+          0px 30px 20px rgba(0,0,0,0.05);
+      }
+      caption {
+        font-weight: bold;
+        font-size: 22px;
+      }
+      tr:hover {
+          background: #f4f4f4;
+      }
+      th, td {
+        color: #555;
+        border: 1px solid #eee;
+        padding: 12px 35px;
+        border-collapse: collapse;
+      }
+      th {
+        background: #444;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+        &.last {
+          border-right: none;
+        }
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .verified {
+        background-color: #A5D6A7;
+        color: #000
+      }
+      .not-verified {
+        background-color: #EF9A9A;
+        color: #000
+      }
+    </style>
+  </head>
 
-</style>
+  <body>
+    <div class="container">
+      <h1>Spool Weight</h1>
 
-<h1>Spool Weight</h1>
+      <table id="Zyltech">
+        <caption>Zyltech</caption>
+        <tr>
+          <th>Material</th>
+          <th>Weight</th>
+          <th>Spool Weight</th>
+        </tr>
+        <tr>
+          <td>PLA</td>
+          <td>1kg</td>
+          <td>180gr</td>
+          <td class="verified">Verified</td>
+        </tr>
+      </table>
 
-<table id="Zyltech">
-  <caption>Zyltech</caption>
- <tr>
-  <th>Material</th>
-  <th>Weight</th>
-  <th>Spool Weight</th>
- </tr>
- <tr>
-   <td>PLA</td>
-   <td>1kg</td>
-   <td>180gr</td>
-   <td style="background-color: #A5D6A7;">Verified</td>
- </tr>
-</table>
+      <table id="HatchBox">
+        <caption>HatchBox</caption>
+        <tr>
+          <th>Material</th>
+          <th>Weight</th>
+          <th>Spool Weight</th>
+        </tr>
+        <tr>
+          <td>PLA</td>
+          <td>1kg</td>
+          <td>224gr</td>
+          <td class="verified">Verified</td>
+        </tr>
+        <tr>
+          <td>PLA UV Blue</td>
+          <td>1kg</td>
+          <td>248gr</td>
+          <td class="verified">Verified</td>
+        </tr>
+      </table>
 
-<table id="HatchBox">
-  <caption>HatchBox</caption>
- <tr>
-  <th>Material</th>
-  <th>Weight</th>
-  <th>Spool Weight</th>
- </tr>
- <tr>
-   <td>PLA</td>
-   <td>1kg</td>
-   <td>224gr</td>
-   <td style="background-color: #A5D6A7;">Verified</td>
- </tr>
- <tr>
-   <td>PLA UV Blue</td>
-   <td>1kg</td>
-   <td>248gr</td>
-   <td style="background-color: #A5D6A7;">Verified</td>
- </tr>
-</table>
+      <table id="Inland">
+        <caption>Inland</caption>
+        <tr>
+          <th>Material</th>
+          <th>Weight</th>
+          <th>Spool Weight</th>
+        </tr>
+        <tr>
+          <td>PLA</td>
+          <td>1kg</td>
+          <td>217.1gr</td>
+          <td class="verified">Verified</td>
+        </tr>
+      </table>
 
-<table id="Inland">
-  <caption>Inland</caption>
- <tr>
-  <th>Material</th>
-  <th>Weight</th>
-  <th>Spool Weight</th>
- </tr>
- <tr>
-   <td>PLA</td>
-   <td>1kg</td>
-   <td>217.1gr</td>
-   <td style="background-color: #A5D6A7;">Verified</td>
- </tr>
-</table>
+      <table id="Polymaker">
+        <caption>Polymaker</caption>
+        <tr>
+          <th>Material</th>
+          <th>Weight</th>
+          <th>Spool Weight</th>
+        </tr>
+        <tr>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td class="not-verified">Not verified</td>
+        </tr>
+        <tr>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td class="not-verified">Not verified</td>
+        </tr>
+      </table>
 
-<table id="Polymaker">
-  <caption>Polymaker</caption>
- <tr>
-  <th>Material</th>
-  <th>Weight</th>
-  <th>Spool Weight</th>
- </tr>
- <tr>
-   <td>Placeholder</td>
-   <td>Placeholder</td>
-   <td>Placeholder</td>
-   <td style="background-color: #EF9A9A;">Not verified</td>
- </tr>
- <tr>
-   <td>Placeholder</td>
-   <td>Placeholder</td>
-   <td>Placeholder</td>
-   <td style="background-color: #EF9A9A;">Not verified</td>
- </tr>
-</table>
+      <table id="Village Plastics">
+        <caption>Village Plastics</caption>
+        <tr>
+          <th>Material</th>
+          <th>Weight</th>
+          <th>Spool Weight</th>
+        </tr>
+        <tr>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td class="not-verified">Not verified</td>
+        </tr>
+        <tr>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td class="not-verified">Not verified</td>
+        </tr>
+      </table>
 
-<table id="Village Plastics">
-  <caption>Village Plastics</caption>
- <tr>
-  <th>Material</th>
-  <th>Weight</th>
-  <th>Spool Weight</th>
- </tr>
- <tr>
-   <td>Placeholder</td>
-   <td>Placeholder</td>
-   <td>Placeholder</td>
-   <td style="background-color: #EF9A9A;">Not verified</td>
- </tr>
- <tr>
-   <td>Placeholder</td>
-   <td>Placeholder</td>
-   <td>Placeholder</td>
-   <td style="background-color: #EF9A9A;">Not verified</td>
- </tr>
-</table>
+      <table id="eSun">
+        <caption>eSun</caption>
+        <tr>
+          <th>Material</th>
+          <th>Weight</th>
+          <th>Spool Weight</th>
+        </tr>
+        <tr>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td class="not-verified">Not verified</td>
+        </tr>
+        <tr>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td class="not-verified">Not verified</td>
+        </tr>
+      </table>
 
-<table id="eSun">
-  <caption>eSun</caption>
- <tr>
-  <th>Material</th>
-  <th>Weight</th>
-  <th>Spool Weight</th>
- </tr>
- <tr>
-  <td>Placeholder</td>
-  <td>Placeholder</td>
-  <td>Placeholder</td>
-  <td style="background-color: #EF9A9A;">Not verified</td>
- </tr>
- <tr>
-  <td>Placeholder</td>
-  <td>Placeholder</td>
-  <td>Placeholder</td>
-  <td style="background-color: #EF9A9A;">Not verified</td>
- </tr>
-</table>
+      <table id="Verbatim">
+        <caption>Verbatim</caption>
+        <tr>
+          <th>Material</th>
+          <th>Weight</th>
+          <th>Spool Weight</th>
+        </tr>
+        <tr>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td class="not-verified">Not verified</td>
+        </tr>
+        <tr>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td>Placeholder</td>
+          <td class="not-verified">Not verified</td>
+        </tr>
+      </table>
 
-<table id="Verbatim">
-  <caption>Verbatim</caption>
- <tr>
-  <th>Material</th>
-  <th>Weight</th>
-  <th>Spool Weight</th>
- </tr>
- <tr>
-  <td>Placeholder</td>
-  <td>Placeholder</td>
-  <td>Placeholder</td>
-  <td style="background-color: #EF9A9A;">Not verified</td>
- </tr>
- <tr>
-  <td>Placeholder</td>
-  <td>Placeholder</td>
-  <td>Placeholder</td>
-  <td style="background-color: #EF9A9A;">Not verified</td>
- </tr>
-</table>
-
-<table id="Amazon Basics">
-  <caption>Amazon Basics</caption>
- <tr>
-  <th>Material</th>
-  <th>Weight</th>
-  <th>Spool Weight</th>
- </tr>
- <tr>
-  <td>PLA</td>
-  <td>1kg</td>
-  <td>248gr</td>
-  <td style="background-color: #A5D6A7;">Verified</td>
- </tr>
-</table>
-
-</body>
+      <table id="Amazon Basics">
+        <caption>Amazon Basics</caption>
+        <tr>
+          <th>Material</th>
+          <th>Weight</th>
+          <th>Spool Weight</th>
+        </tr>
+        <tr>
+          <td>PLA</td>
+          <td>1kg</td>
+          <td>248gr</td>
+          <td class="verified">Verified</td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>
